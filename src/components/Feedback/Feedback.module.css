@@ -1,0 +1,7 @@
+.feedback_wrap p:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.feedback_wrap p {
+  font-size: 18px;
+}
