@@ -1,13 +1,13 @@
 import s from "./Feedback.module.css";
 
-const Feedback = () => {
+const Feedback = ({ good, neutral, bad, total, positive }) => {
   return (
     <div className={s.feedback_wrap}>
-      <p>Good: </p>
-      <p>Neutral: </p>
-      <p>Bad: </p>
-      <p>Total: </p>
-      <p>Positive: </p>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p>Positive: {positive ? positive : 0}%</p>
     </div>
   );
 };
