@@ -1,0 +1,11 @@
+.button_wrap {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button_wrap button {
+  padding: 10px;
+  border-radius: 10px;
+}
