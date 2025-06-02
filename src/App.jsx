@@ -6,6 +6,7 @@ import Notification from "./components/Notification/Notification";
 import Options from "./components/Options/Options";
 import LoginForm from "./components/LoginForm/LoginForm";
 import SimpleForm from "./components/SimpleForm/SimpleForm";
+import EmailForm from "./components/EmailForm/EmailForm";
 
 function App() {
   // state
@@ -64,6 +65,7 @@ function App() {
 
       <LoginForm onLogin={handleLogin} />
       <SimpleForm />
+      <EmailForm />
     </Container>
   );
 }
