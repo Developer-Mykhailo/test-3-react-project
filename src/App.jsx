@@ -8,6 +8,7 @@ import LoginForm from "./components/LoginForm/LoginForm";
 import SimpleForm from "./components/SimpleForm/SimpleForm";
 import EmailForm from "./components/EmailForm/EmailForm";
 import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
+import FeedbackForm from "./components/FeedbackForm/FeedbackForm";
 
 function App() {
   // state
@@ -68,6 +69,7 @@ function App() {
       <SimpleForm />
       <EmailForm />
       <RegistrationForm />
+      <FeedbackForm />
     </Container>
   );
 }
