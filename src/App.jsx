@@ -9,6 +9,7 @@ import SimpleForm from "./components/SimpleForm/SimpleForm";
 import EmailForm from "./components/EmailForm/EmailForm";
 import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
 import FeedbackForm from "./components/FeedbackForm/FeedbackForm";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 function App() {
   // state
@@ -43,6 +44,10 @@ function App() {
     console.log(userData);
   };
 
+  const handleUserData = (userData) => {
+    console.log(userData);
+  };
+
   //JSX
   return (
     <Container>
@@ -70,6 +75,8 @@ function App() {
       <EmailForm />
       <RegistrationForm />
       <FeedbackForm />
+
+      <ContactForm onSubmitMessage={handleUserData} />
     </Container>
   );
 }
