@@ -10,6 +10,7 @@ import EmailForm from "./components/EmailForm/EmailForm";
 import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
 import FeedbackForm from "./components/FeedbackForm/FeedbackForm";
 import ContactForm from "./components/ContactForm/ContactForm";
+import BookingForm from "./components/BookingForm/BookingForm";
 
 function App() {
   // state
@@ -48,6 +49,13 @@ function App() {
     console.log(userData);
   };
 
+  const handleBookingForm = (data) => {
+    const { fullName, email, seats } = data;
+    console.log(fullName);
+    console.log(email);
+    console.log(seats);
+  };
+
   //JSX
   return (
     <Container>
@@ -77,6 +85,8 @@ function App() {
       <FeedbackForm />
 
       <ContactForm onSubmitMessage={handleUserData} />
+
+      <BookingForm onBook={handleBookingForm} />
     </Container>
   );
 }
