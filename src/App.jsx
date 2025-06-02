@@ -5,7 +5,7 @@ import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
 import Options from "./components/Options/Options";
 import LoginForm from "./components/LoginForm/LoginForm";
-import SearchBar from "./components/SearchBar/SearchBar";
+import SimpleForm from "./components/SimpleForm/SimpleForm";
 
 function App() {
   // state
@@ -63,8 +63,7 @@ function App() {
       )}
 
       <LoginForm onLogin={handleLogin} />
-
-      <SearchBar />
+      <SimpleForm />
     </Container>
   );
 }
