@@ -4,6 +4,8 @@ import Description from "./components/Description/Description";
 import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
 import Options from "./components/Options/Options";
+import LoginForm from "./components/LoginForm/LoginForm";
+import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
   // state
@@ -33,6 +35,11 @@ function App() {
   const total = good + neutral + bad;
   const positive = Math.round((good / total) * 100);
 
+  // form handler
+  const handleLogin = (userData) => {
+    console.log(userData);
+  };
+
   //JSX
   return (
     <Container>
@@ -54,6 +61,10 @@ function App() {
       ) : (
         <Notification />
       )}
+
+      <LoginForm onLogin={handleLogin} />
+
+      <SearchBar />
     </Container>
   );
 }

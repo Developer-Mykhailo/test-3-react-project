@@ -1,3 +1,7 @@
+.feedback_wrap {
+  margin-bottom: 20px;
+}
+
 .feedback_wrap p:not(:last-child) {
   margin-bottom: 12px;
 }
