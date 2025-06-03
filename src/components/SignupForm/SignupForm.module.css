@@ -1,0 +1,21 @@
+.wrap {
+  outline: 1px solid #333;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.wrap h3 {
+  margin-bottom: 10px;
+}
+
+.form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.form input,
+.form button {
+  padding: 8px;
+  border-radius: 8px;
+}

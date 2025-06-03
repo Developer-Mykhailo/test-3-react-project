@@ -12,6 +12,7 @@ import FeedbackForm from "./components/FeedbackForm/FeedbackForm";
 import ContactForm from "./components/ContactForm/ContactForm";
 import BookingForm from "./components/BookingForm/BookingForm";
 import SignupForm from "./components/SignupForm/SignupForm";
+import SurveyForm from "./components/SurveyForm/SurveyForm";
 
 function App() {
   // state
@@ -89,6 +90,7 @@ function App() {
 
       <BookingForm onBook={handleBookingForm} />
       <SignupForm />
+      <SurveyForm />
     </Container>
   );
 }

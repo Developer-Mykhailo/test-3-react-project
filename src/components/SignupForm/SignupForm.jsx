@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import s from "./SignupForm.module.css";
 
 const SignupForm = () => {
   // state
@@ -40,31 +41,34 @@ const SignupForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        onChange={handleChange}
-        type="text"
-        name="userName"
-        value={userName}
-        required
-      />
-      <input
-        onChange={handleChange}
-        type="email"
-        name="email"
-        value={email}
-        required
-      />
-      <input
-        onChange={handleChange}
-        type="password"
-        name="password"
-        value={password}
-        required
-      />
-      <button type="submit">Sign Up</button>
-      {error && <p>{error}</p>}
-    </form>
+    <div className={s.wrap}>
+      <h3>SignupForm</h3>
+      <form className={s.form} onSubmit={handleSubmit}>
+        <input
+          onChange={handleChange}
+          type="text"
+          name="userName"
+          value={userName}
+          required
+        />
+        <input
+          onChange={handleChange}
+          type="email"
+          name="email"
+          value={email}
+          required
+        />
+        <input
+          onChange={handleChange}
+          type="password"
+          name="password"
+          value={password}
+          required
+        />
+        <button type="submit">Sign Up</button>
+        {error && <p>{error}</p>}
+      </form>
+    </div>
   );
 };
 
