@@ -35,6 +35,7 @@ const SignupForm = () => {
     }
     setError("");
     console.log("User registered:", formData);
+    localStorage.removeItem("signUp-data");
     setFormData({ userName: "", email: "", password: "" });
   };
 
