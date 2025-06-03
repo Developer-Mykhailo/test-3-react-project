@@ -11,6 +11,7 @@ import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
 import FeedbackForm from "./components/FeedbackForm/FeedbackForm";
 import ContactForm from "./components/ContactForm/ContactForm";
 import BookingForm from "./components/BookingForm/BookingForm";
+import SignupForm from "./components/SignupForm/SignupForm";
 
 function App() {
   // state
@@ -87,6 +88,7 @@ function App() {
       <ContactForm onSubmitMessage={handleUserData} />
 
       <BookingForm onBook={handleBookingForm} />
+      <SignupForm />
     </Container>
   );
 }
