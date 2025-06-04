@@ -1,0 +1,46 @@
+.form {
+  max-width: 400px;
+  outline: 1px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.fullName_wrap {
+  margin-bottom: 20px;
+
+  & label {
+    margin-right: 20px;
+  }
+
+  & [type="text"] {
+    padding: 8px;
+    border-radius: 8px;
+  }
+}
+
+.required_star {
+  color: red;
+}
+
+.gender_wrap {
+  margin-bottom: 20px;
+
+  & [value="male"] {
+    margin-right: 20px;
+  }
+}
+
+.form button {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.error {
+  display: block;
+  color: red;
+  font-size: 14px;
+}
