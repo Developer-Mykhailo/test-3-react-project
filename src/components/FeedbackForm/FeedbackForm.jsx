@@ -14,6 +14,7 @@ const FeedbackForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFeedback((prev) => ({ ...prev, [name]: value }));
+    console.log(`Feedback from: ${name} ( ${email} )`);
   };
 
   const handleSubmit = (e) => {
@@ -29,16 +30,24 @@ const FeedbackForm = () => {
 
   //JSX
   return (
-    <form className={s.form} onSubmit={handleSubmit}>
-      <input type="text" name="name" value={name} onChange={handleChange} />
-      <input type="email" name="email" value={email} onChange={handleChange} />
-      <textarea
-        name="message"
-        value={message}
-        onChange={handleChange}
-      ></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <div>
+      <h3>Feedback form</h3>
+      <form className={s.form} onSubmit={handleSubmit}>
+        <input type="text" name="name" value={name} onChange={handleChange} />
+        <input
+          type="email"
+          name="email"
+          value={email}
+          onChange={handleChange}
+        />
+        <textarea
+          name="message"
+          value={message}
+          onChange={handleChange}
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   );
 };
 

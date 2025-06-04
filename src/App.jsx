@@ -13,6 +13,7 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import BookingForm from "./components/BookingForm/BookingForm";
 import SignupForm from "./components/SignupForm/SignupForm";
 import SurveyForm from "./components/SurveyForm/SurveyForm";
+import WorkshopForm from "./components/WorkshopForm/WorkshopForm";
 
 function App() {
   // state
@@ -61,6 +62,8 @@ function App() {
   //JSX
   return (
     <Container>
+      <WorkshopForm />
+
       <Description />
       <Options
         updateFeedback={updateFeedback}

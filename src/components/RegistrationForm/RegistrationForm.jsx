@@ -23,11 +23,19 @@ const RegistrationForm = () => {
 
   // JSX
   return (
-    <form className={s.form} onSubmit={handleSubmit}>
-      <input type="text" name="name" value={name} onChange={handleChange} />
-      <input type="email" name="email" value={email} onChange={handleChange} />
-      <button type="submit">Register</button>
-    </form>
+    <div>
+      <h3>Registration Form</h3>
+      <form className={s.form} onSubmit={handleSubmit}>
+        <input type="text" name="name" value={name} onChange={handleChange} />
+        <input
+          type="email"
+          name="email"
+          value={email}
+          onChange={handleChange}
+        />
+        <button type="submit">Register</button>
+      </form>
+    </div>
   );
 };
 
