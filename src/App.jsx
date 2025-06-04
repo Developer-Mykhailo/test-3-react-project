@@ -14,6 +14,7 @@ import BookingForm from "./components/BookingForm/BookingForm";
 import SignupForm from "./components/SignupForm/SignupForm";
 import SurveyForm from "./components/SurveyForm/SurveyForm";
 import WorkshopForm from "./components/WorkshopForm/WorkshopForm";
+import SimpleFormikForm from "./components/SimpleFormikForm/SimpleFormikForm";
 
 function App() {
   // state
@@ -62,6 +63,7 @@ function App() {
   //JSX
   return (
     <Container>
+      <SimpleFormikForm />
       <WorkshopForm />
 
       <Description />
