@@ -69,9 +69,9 @@ const WorkshopForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (topics.length === 0) {
+    if ((topics.length === 0, !gender)) {
       iziToast.warning({
-        message: "Choise at least one topic",
+        message: "Make your choise",
         position: "center",
       });
       return;
