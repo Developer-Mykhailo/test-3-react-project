@@ -1,11 +1,12 @@
 //Http.jsx
 
-import axios from "axios";
+// import axios from "axios";
 import Container from "../Container/Container";
 import { useEffect, useState } from "react";
 import ArtistsList from "../ArtistsList/ArtistsList";
 import SearchForm from "../SearchForm/SearchForm";
 import debounce from "lodash.debounce";
+import { getArtistsApi } from "../../servises/api";
 
 const Loader = () => {
   return <h2>Loading...</h2>;
@@ -23,14 +24,11 @@ const Http = () => {
   //handlers
   const getArtists = async (search) => {
     try {
-      // setArtists([]);
       setIsLoading(true);
       setError(null);
-      const { data } = await axios.get(
-        `https://sound-wave.b.goit.study/api/artists${
-          search ? `?name=${search}` : ""
-        }`
-      );
+
+      const data = await getArtistsApi(search); // fetch data
+
       setArtists(data.artists);
     } catch (error) {
       setError(error.message);
@@ -44,9 +42,7 @@ const Http = () => {
       try {
         setIsLoading(true);
         setError(null);
-        const { data } = await axios.get(
-          "https://sound-wave.b.goit.study/api/artists"
-        );
+        const data = await getArtistsApi();
 
         setArtists(data.artists);
       } catch (error) {
