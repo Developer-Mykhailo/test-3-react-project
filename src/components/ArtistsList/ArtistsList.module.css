@@ -1,0 +1,14 @@
+.artists_descr {
+  /* font-family: var(--font-family); */
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  color: var(--color-scheme-1-text);
+}
